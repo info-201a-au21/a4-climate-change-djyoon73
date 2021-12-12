@@ -23,7 +23,6 @@ server <- function(input, output) {
       )
     )
   
-
 # 1. What continent has the highest co2 per capita as of the most recent year of record?
 
 highest_co2_per_capita <- co2_data_by_continent %>%
@@ -125,20 +124,4 @@ africa_proportion <- co2_data_by_continent %>%
     return(my_plotly_plot)
   })
 
-  # output$co2_plot <- renderPlotly ({
-  # my_plot <- ggplot(data = by_year_co2,
-  #                   aes(
-  #                     x = year,
-  #                     y = !!as.name(input$y_axis_input),
-  #                     color = country)) +
-  #     geom_line() +
-  #     geom_point() +
-  #     labs(x = "Year",
-  #          y = !!as.name(input$y_axis_input)) +
-  #     scale_x_continuous(limits = input$continent_input)
-  # 
-  # my_plotly_plot <- ggplotly(my_plot)
-  # 
-  # return(my_plotly_plot)
-  # })
 }

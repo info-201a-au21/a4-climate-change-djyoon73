@@ -1,7 +1,8 @@
-library(shiny)
-library(ggplot2)
-library(rsconnect)
-library(plotly)
+library("dplyr")
+library("stringr")
+library("shiny")
+library("plotly")
+library("mapproj")
 
 source("my_ui.R")
 source("my_server.R")
